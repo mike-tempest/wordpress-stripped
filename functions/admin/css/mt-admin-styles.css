@@ -1,0 +1,95 @@
+@CHARSET "UTF-8";
+ 
+html,
+body.login{
+	background:url(../images/login-bg.jpg);
+	font-size:16px;
+}
+	body.login #login{
+		position:absolute;
+		top:50%; left:50%;
+		width:260px; height:390px;
+		margin:-255px 0 0 -255px; padding:60px 125px;
+		background:url(../images/login-circle-bg.jpg) no-repeat center center;
+	}
+		body.login #login .message,
+		body.login #login_error{
+			position:absolute;
+			top:-80px; left:0px;
+			width:486px;
+			margin:0;
+			font-size:.875em;
+		}
+	body.login #login h1{ margin-bottom:16px; }
+		body.login #login h1 a{
+			width:161px; height:50px;
+			display:block;
+			margin:0 auto; padding:0;
+			background-image:url(../images/logo.png);
+			background-repeat:no-repeat;
+			background-position:center center;
+			background-size:auto auto;
+		}
+	body.login #loginform{
+		margin:0; padding:0;
+		background:none;
+		border:0;
+		box-shadow:none;
+		font-family:'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+	}
+		body.login #loginform label{
+			color:#fff;
+			font-size:.75em;
+			text-transform:uppercase;
+			text-shadow:-1px 0 0 #320000;
+		}
+		body.login #loginform input[type=text],
+		body.login #loginform input[type=password]{
+			padding:8px;
+			border:1px solid #320000;
+			font-size:1.25em;
+		}
+		body.login #loginform input[type=submit]{
+			padding:8px 24px;
+			background:#525e61;
+			background:-moz-linear-gradient(top, #525e61 0%, #122b31 100%);
+			background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#525e61), color-stop(100%,#122b31));
+			background:-webkit-linear-gradient(top, #525e61 0%,#122b31 100%);
+			background:-o-linear-gradient(top, #525e61 0%,#122b31 100%);
+			background:-ms-linear-gradient(top, #525e61 0%,#122b31 100%);
+			background:linear-gradient(top, #525e61 0%,#122b31 100%);
+			border:1px solid #10252a;
+			border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -ms-border-radius:3px; -o-border-radius:3px;
+			text-transform:uppercase;
+			text-shadow:-1px 0 0 #223033;
+		}
+	body.login #loginform .forgetmenot{
+		padding:8px 0 0 20px;
+		background:url(../images/forgetmenot-bg.png) no-repeat 0 8px;
+		line-height:16px;
+	}
+		body.login #loginform .forgetmenot label{
+			margin:0; padding:0;	
+		}
+		body.login #loginform .forgetmenot input[type=checkbox]{
+			margin:4px 4px 0 0;
+		}
+	body.login #nav,
+	body.login #backtoblog{
+		display:block;
+		clear:both;
+		margin:0;
+		text-align:center;
+	}
+	body.login #nav{ font-size:.75em; }
+		body.login #nav a,
+		body.login #nav a:hover{
+			color:#320000 !important;
+			text-shadow:1px 0 0 #320000;
+		}
+		body.login #backtoblog a,
+		body.login #backtoblog a:hover{
+			color:#fff !important;
+			text-decoration:none;
+			text-shadow:-1px 0 0 #320000 !important;
+		}
